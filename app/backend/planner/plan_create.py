@@ -1,6 +1,8 @@
 import json
 import boto3
 
+REGION = 'ap-northeast-2'
+
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('PlannerData')
 

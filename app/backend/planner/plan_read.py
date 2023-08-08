@@ -1,8 +1,10 @@
 import json
 import boto3
 
+REGION = 'ap-northeast-2'
+
 dynamodb = boto3.resource('dynamodb')
-table = dynamodb.Table('PlannerData')  # Make sure to update the table name
+table = dynamodb.Table('PlannerData')
 
 def lambda_handler(event, context):
     try:
